@@ -1,0 +1,18 @@
+S A1 A2 A3 A4 A5
+a b d
+S A1
+S A2
+A1 A3
+A1 A4
+A2 A4
+A2 A5
+A3 S
+A3 b
+A3 [empty]
+A4 S
+A4 a
+A5 S
+A5 d
+A5 [empty]
+
+S

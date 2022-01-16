@@ -1,0 +1,253 @@
+[Nonterminal Symbols] L B A E 
+[Terminal Symbols] ) ( id num 
+[Start Symbol] E
+[Productions]
+L -> L E | E | 
+B -> ( L ) | 
+A -> num | id | 
+E -> A | B | 
+
+[Nonterminal symbols] L L' B A E 
+[Terminal symbols] ) ( id num 
+[Start symbol] E
+[Productions]
+L' -> [empty] | E L' | 
+B -> ( L ) | 
+L -> E L' | 
+A -> num | id | 
+E -> A | B | 
+
+[FIRST set of candidates]
+Candidate      E L' 
+FIRST          num id ( 
+Candidate      [empty] 
+FIRST          [empty] 
+Candidate      E L' 
+FIRST          num id ( 
+Candidate      ( L ) 
+FIRST          ( 
+Candidate      num 
+FIRST          num 
+Candidate      id 
+FIRST          id 
+Candidate      A 
+FIRST          num id 
+Candidate      B 
+FIRST          ( 
+
+[FIRST and FOLLOW set of nonterminals]
+Nonterminals   L
+FIRST          ( id num 
+FOLLOW         ) 
+Nonterminals   L'
+FIRST          ( id num [empty] 
+FOLLOW         ) 
+Nonterminals   B
+FIRST          ( 
+FOLLOW         ( id num $ ) 
+Nonterminals   A
+FIRST          id num 
+FOLLOW         ( id num $ ) 
+Nonterminals   E
+FIRST          ( id num 
+FOLLOW         ) $ num id ( 
+
+[Parsing Table]
+Nonterminal    E
+	Terminal       (
+	Production     E -> B 
+	Terminal       id
+	Production     E -> A 
+	Terminal       num
+	Production     E -> A 
+
+Nonterminal    A
+	Terminal       id
+	Production     A -> id 
+	Terminal       num
+	Production     A -> num 
+
+Nonterminal    B
+	Terminal       (
+	Production     B -> ( L ) 
+
+Nonterminal    L'
+	Terminal       )
+	Production     L' -> [empty] 
+	Terminal       (
+	Production     L' -> E L' 
+	Terminal       id
+	Production     L' -> E L' 
+	Terminal       num
+	Production     L' -> E L' 
+
+Nonterminal    L
+	Terminal       (
+	Production     L -> E L' 
+	Terminal       id
+	Production     L -> E L' 
+	Terminal       num
+	Production     L -> E L' 
+
+
+Stack          $ E 
+Input          ( id ( id ( num ) ) ( id ) ) $ 
+Output          
+
+Stack          $ B 
+Input          ( id ( id ( num ) ) ( id ) ) $ 
+Output         E -> B 
+
+Stack          $ ) L ( 
+Input          ( id ( id ( num ) ) ( id ) ) $ 
+Output         B -> ( L ) 
+
+Stack          $ ) L 
+Input          id ( id ( num ) ) ( id ) ) $ 
+Output         
+
+Stack          $ ) L' E 
+Input          id ( id ( num ) ) ( id ) ) $ 
+Output         L -> E L' 
+
+Stack          $ ) L' A 
+Input          id ( id ( num ) ) ( id ) ) $ 
+Output         E -> A 
+
+Stack          $ ) L' id 
+Input          id ( id ( num ) ) ( id ) ) $ 
+Output         A -> id 
+
+Stack          $ ) L' 
+Input          ( id ( num ) ) ( id ) ) $ 
+Output         
+
+Stack          $ ) L' E 
+Input          ( id ( num ) ) ( id ) ) $ 
+Output         L' -> E L' 
+
+Stack          $ ) L' B 
+Input          ( id ( num ) ) ( id ) ) $ 
+Output         E -> B 
+
+Stack          $ ) L' ) L ( 
+Input          ( id ( num ) ) ( id ) ) $ 
+Output         B -> ( L ) 
+
+Stack          $ ) L' ) L 
+Input          id ( num ) ) ( id ) ) $ 
+Output         
+
+Stack          $ ) L' ) L' E 
+Input          id ( num ) ) ( id ) ) $ 
+Output         L -> E L' 
+
+Stack          $ ) L' ) L' A 
+Input          id ( num ) ) ( id ) ) $ 
+Output         E -> A 
+
+Stack          $ ) L' ) L' id 
+Input          id ( num ) ) ( id ) ) $ 
+Output         A -> id 
+
+Stack          $ ) L' ) L' 
+Input          ( num ) ) ( id ) ) $ 
+Output         
+
+Stack          $ ) L' ) L' E 
+Input          ( num ) ) ( id ) ) $ 
+Output         L' -> E L' 
+
+Stack          $ ) L' ) L' B 
+Input          ( num ) ) ( id ) ) $ 
+Output         E -> B 
+
+Stack          $ ) L' ) L' ) L ( 
+Input          ( num ) ) ( id ) ) $ 
+Output         B -> ( L ) 
+
+Stack          $ ) L' ) L' ) L 
+Input          num ) ) ( id ) ) $ 
+Output         
+
+Stack          $ ) L' ) L' ) L' E 
+Input          num ) ) ( id ) ) $ 
+Output         L -> E L' 
+
+Stack          $ ) L' ) L' ) L' A 
+Input          num ) ) ( id ) ) $ 
+Output         E -> A 
+
+Stack          $ ) L' ) L' ) L' num 
+Input          num ) ) ( id ) ) $ 
+Output         A -> num 
+
+Stack          $ ) L' ) L' ) L' 
+Input          ) ) ( id ) ) $ 
+Output         
+
+Stack          $ ) L' ) L' ) 
+Input          ) ) ( id ) ) $ 
+Output         L' -> [empty] 
+
+Stack          $ ) L' ) L' 
+Input          ) ( id ) ) $ 
+Output         
+
+Stack          $ ) L' ) 
+Input          ) ( id ) ) $ 
+Output         L' -> [empty] 
+
+Stack          $ ) L' 
+Input          ( id ) ) $ 
+Output         
+
+Stack          $ ) L' E 
+Input          ( id ) ) $ 
+Output         L' -> E L' 
+
+Stack          $ ) L' B 
+Input          ( id ) ) $ 
+Output         E -> B 
+
+Stack          $ ) L' ) L ( 
+Input          ( id ) ) $ 
+Output         B -> ( L ) 
+
+Stack          $ ) L' ) L 
+Input          id ) ) $ 
+Output         
+
+Stack          $ ) L' ) L' E 
+Input          id ) ) $ 
+Output         L -> E L' 
+
+Stack          $ ) L' ) L' A 
+Input          id ) ) $ 
+Output         E -> A 
+
+Stack          $ ) L' ) L' id 
+Input          id ) ) $ 
+Output         A -> id 
+
+Stack          $ ) L' ) L' 
+Input          ) ) $ 
+Output         
+
+Stack          $ ) L' ) 
+Input          ) ) $ 
+Output         L' -> [empty] 
+
+Stack          $ ) L' 
+Input          ) $ 
+Output         
+
+Stack          $ ) 
+Input          ) $ 
+Output         L' -> [empty] 
+
+Stack          $ 
+Input          $ 
+Output         
+
+Parsing successful!

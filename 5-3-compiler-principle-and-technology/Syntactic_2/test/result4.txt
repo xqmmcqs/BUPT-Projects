@@ -1,0 +1,651 @@
+[Nonterminal Symbols] F T E 
+[Terminal Symbols] * - ( num / ) + 
+[Start Symbol] E
+[Productions]
+F -> ( E ) 
+F -> num 
+T -> T * F 
+T -> T / F 
+T -> F 
+E -> E + T 
+E -> E - T 
+E -> T 
+
+[Nonterminal Symbols] F T E' E 
+[Terminal Symbols] * - ( num / ) + 
+[Start Symbol] E'
+[Productions]
+F -> ( E ) 
+F -> num 
+T -> T * F 
+T -> T / F 
+T -> F 
+E' -> E 
+E -> E + T 
+E -> E - T 
+E -> T 
+
+[DFA]
+I0:
+E' -> · E     $ 
+E -> · E + T     + - $ 
+E -> · E - T     + - $ 
+E -> · T     + - $ 
+T -> · T * F     $ - + / * 
+T -> · T / F     $ - + / * 
+T -> · F     $ - + / * 
+F -> · ( E )     + / * - $ 
+F -> · num     + / * - $ 
+--- F --> I3
+--- T --> I2
+--- num --> I5
+--- ( --> I4
+--- E --> I1
+
+I1:
+E -> E · + T     - $ + 
+E -> E · - T     - $ + 
+E' -> E ·     $ 
+--- - --> I7
+--- + --> I6
+
+I2:
+T -> T · * F     * + / $ - 
+T -> T · / F     * + / $ - 
+E -> T ·     - $ + 
+--- / --> I9
+--- * --> I8
+
+I3:
+T -> F ·     * + / $ - 
+
+I4:
+E -> · E + T     - + ) 
+E -> · E - T     - + ) 
+E -> · T     - + ) 
+T -> · T * F     ) - + / * 
+T -> · T / F     ) - + / * 
+T -> · F     ) - + / * 
+F -> · ( E )     - + / * ) 
+F -> ( · E )     - $ * + / 
+F -> · num     - + / * ) 
+--- F --> I12
+--- T --> I11
+--- num --> I14
+--- ( --> I13
+--- E --> I10
+
+I5:
+F -> num ·     - $ * + / 
+
+I6:
+E -> E + · T     $ - + 
+T -> · T * F     $ - + / * 
+T -> · T / F     $ - + / * 
+T -> · F     $ - + / * 
+F -> · ( E )     * $ - / + 
+F -> · num     * $ - / + 
+--- num --> I5
+--- ( --> I4
+--- F --> I3
+--- T --> I15
+
+I7:
+E -> E - · T     $ - + 
+T -> · T * F     $ - + / * 
+T -> · T / F     $ - + / * 
+T -> · F     $ - + / * 
+F -> · ( E )     * $ - / + 
+F -> · num     * $ - / + 
+--- num --> I5
+--- ( --> I4
+--- F --> I3
+--- T --> I16
+
+I8:
+T -> T * · F     * / + - $ 
+F -> · ( E )     * / + - $ 
+F -> · num     * / + - $ 
+--- num --> I5
+--- ( --> I4
+--- F --> I17
+
+I9:
+T -> T / · F     * / + - $ 
+F -> · ( E )     * / + - $ 
+F -> · num     * / + - $ 
+--- num --> I5
+--- ( --> I4
+--- F --> I18
+
+I10:
+E -> E · + T     ) + - 
+E -> E · - T     ) + - 
+F -> ( E · )     + / * - $ 
+--- ) --> I21
+--- - --> I20
+--- + --> I19
+
+I11:
+T -> T · * F     * + / - ) 
+T -> T · / F     * + / - ) 
+E -> T ·     ) + - 
+--- / --> I23
+--- * --> I22
+
+I12:
+T -> F ·     * + / - ) 
+
+I13:
+E -> · E + T     - + ) 
+E -> · E - T     - + ) 
+E -> · T     - + ) 
+T -> · T * F     ) - + / * 
+T -> · T / F     ) - + / * 
+T -> · F     ) - + / * 
+F -> · ( E )     - + / * ) 
+F -> ( · E )     ) * + / - 
+F -> · num     - + / * ) 
+--- F --> I12
+--- T --> I11
+--- num --> I14
+--- ( --> I13
+--- E --> I24
+
+I14:
+F -> num ·     ) * + / - 
+
+I15:
+T -> T · * F     * + / $ - 
+T -> T · / F     * + / $ - 
+E -> E + T ·     + $ - 
+--- / --> I9
+--- * --> I8
+
+I16:
+T -> T · * F     * + / $ - 
+T -> T · / F     * + / $ - 
+E -> E - T ·     + $ - 
+--- / --> I9
+--- * --> I8
+
+I17:
+T -> T * F ·     - $ / + * 
+
+I18:
+T -> T / F ·     - $ / + * 
+
+I19:
+E -> E + · T     + ) - 
+T -> · T * F     + / ) - * 
+T -> · T / F     + / ) - * 
+T -> · F     + / ) - * 
+F -> · ( E )     * / + ) - 
+F -> · num     * / + ) - 
+--- num --> I14
+--- ( --> I13
+--- F --> I12
+--- T --> I25
+
+I20:
+E -> E - · T     + ) - 
+T -> · T * F     + / ) - * 
+T -> · T / F     + / ) - * 
+T -> · F     + / ) - * 
+F -> · ( E )     * / + ) - 
+F -> · num     * / + ) - 
+--- num --> I14
+--- ( --> I13
+--- F --> I12
+--- T --> I26
+
+I21:
+F -> ( E ) ·     - $ * + / 
+
+I22:
+T -> T * · F     * / + - ) 
+F -> · ( E )     * / + - ) 
+F -> · num     * / + - ) 
+--- num --> I14
+--- ( --> I13
+--- F --> I27
+
+I23:
+T -> T / · F     * / + - ) 
+F -> · ( E )     * / + - ) 
+F -> · num     * / + - ) 
+--- num --> I14
+--- ( --> I13
+--- F --> I28
+
+I24:
+E -> E · + T     ) + - 
+E -> E · - T     ) + - 
+F -> ( E · )     - + / * ) 
+--- ) --> I29
+--- - --> I20
+--- + --> I19
+
+I25:
+T -> T · * F     * - ) + / 
+T -> T · / F     * - ) + / 
+E -> E + T ·     - + ) 
+--- / --> I23
+--- * --> I22
+
+I26:
+T -> T · * F     * - ) + / 
+T -> T · / F     * - ) + / 
+E -> E - T ·     - + ) 
+--- / --> I23
+--- * --> I22
+
+I27:
+T -> T * F ·     ) - / + * 
+
+I28:
+T -> T / F ·     ) - / + * 
+
+I29:
+F -> ( E ) ·     ) * + / - 
+
+
+[Parsing Table]
+State 0
+	Nonterminal    (
+	Action         S 4
+	Nonterminal    num
+	Action         S 5
+	Terminal       E
+	Goto           1
+	Terminal       T
+	Goto           2
+	Terminal       F
+	Goto           3
+State 1
+	Nonterminal    +
+	Action         S 6
+	Nonterminal    $
+	Action         ACC
+	Nonterminal    -
+	Action         S 7
+State 2
+	Nonterminal    $
+	Action         R E -> T 
+	Nonterminal    -
+	Action         R E -> T 
+	Nonterminal    *
+	Action         S 8
+	Nonterminal    +
+	Action         R E -> T 
+	Nonterminal    /
+	Action         S 9
+State 3
+	Nonterminal    -
+	Action         R T -> F 
+	Nonterminal    $
+	Action         R T -> F 
+	Nonterminal    /
+	Action         R T -> F 
+	Nonterminal    +
+	Action         R T -> F 
+	Nonterminal    *
+	Action         R T -> F 
+State 4
+	Nonterminal    (
+	Action         S 13
+	Nonterminal    num
+	Action         S 14
+	Terminal       E
+	Goto           10
+	Terminal       T
+	Goto           11
+	Terminal       F
+	Goto           12
+State 5
+	Nonterminal    /
+	Action         R F -> num 
+	Nonterminal    +
+	Action         R F -> num 
+	Nonterminal    *
+	Action         R F -> num 
+	Nonterminal    $
+	Action         R F -> num 
+	Nonterminal    -
+	Action         R F -> num 
+State 6
+	Nonterminal    (
+	Action         S 4
+	Nonterminal    num
+	Action         S 5
+	Terminal       T
+	Goto           15
+	Terminal       F
+	Goto           3
+State 7
+	Nonterminal    (
+	Action         S 4
+	Nonterminal    num
+	Action         S 5
+	Terminal       T
+	Goto           16
+	Terminal       F
+	Goto           3
+State 8
+	Nonterminal    (
+	Action         S 4
+	Nonterminal    num
+	Action         S 5
+	Terminal       F
+	Goto           17
+State 9
+	Nonterminal    (
+	Action         S 4
+	Nonterminal    num
+	Action         S 5
+	Terminal       F
+	Goto           18
+State 10
+	Nonterminal    +
+	Action         S 19
+	Nonterminal    -
+	Action         S 20
+	Nonterminal    )
+	Action         S 21
+State 11
+	Nonterminal    -
+	Action         R E -> T 
+	Nonterminal    )
+	Action         R E -> T 
+	Nonterminal    *
+	Action         S 22
+	Nonterminal    +
+	Action         R E -> T 
+	Nonterminal    /
+	Action         S 23
+State 12
+	Nonterminal    )
+	Action         R T -> F 
+	Nonterminal    -
+	Action         R T -> F 
+	Nonterminal    /
+	Action         R T -> F 
+	Nonterminal    +
+	Action         R T -> F 
+	Nonterminal    *
+	Action         R T -> F 
+State 13
+	Nonterminal    (
+	Action         S 13
+	Nonterminal    num
+	Action         S 14
+	Terminal       E
+	Goto           24
+	Terminal       T
+	Goto           11
+	Terminal       F
+	Goto           12
+State 14
+	Nonterminal    -
+	Action         R F -> num 
+	Nonterminal    /
+	Action         R F -> num 
+	Nonterminal    +
+	Action         R F -> num 
+	Nonterminal    *
+	Action         R F -> num 
+	Nonterminal    )
+	Action         R F -> num 
+State 15
+	Nonterminal    -
+	Action         R E -> E + T 
+	Nonterminal    $
+	Action         R E -> E + T 
+	Nonterminal    *
+	Action         S 8
+	Nonterminal    +
+	Action         R E -> E + T 
+	Nonterminal    /
+	Action         S 9
+State 16
+	Nonterminal    -
+	Action         R E -> E - T 
+	Nonterminal    $
+	Action         R E -> E - T 
+	Nonterminal    *
+	Action         S 8
+	Nonterminal    +
+	Action         R E -> E - T 
+	Nonterminal    /
+	Action         S 9
+State 17
+	Nonterminal    *
+	Action         R T -> T * F 
+	Nonterminal    +
+	Action         R T -> T * F 
+	Nonterminal    /
+	Action         R T -> T * F 
+	Nonterminal    $
+	Action         R T -> T * F 
+	Nonterminal    -
+	Action         R T -> T * F 
+State 18
+	Nonterminal    *
+	Action         R T -> T / F 
+	Nonterminal    +
+	Action         R T -> T / F 
+	Nonterminal    /
+	Action         R T -> T / F 
+	Nonterminal    $
+	Action         R T -> T / F 
+	Nonterminal    -
+	Action         R T -> T / F 
+State 19
+	Nonterminal    (
+	Action         S 13
+	Nonterminal    num
+	Action         S 14
+	Terminal       T
+	Goto           25
+	Terminal       F
+	Goto           12
+State 20
+	Nonterminal    (
+	Action         S 13
+	Nonterminal    num
+	Action         S 14
+	Terminal       T
+	Goto           26
+	Terminal       F
+	Goto           12
+State 21
+	Nonterminal    /
+	Action         R F -> ( E ) 
+	Nonterminal    +
+	Action         R F -> ( E ) 
+	Nonterminal    *
+	Action         R F -> ( E ) 
+	Nonterminal    $
+	Action         R F -> ( E ) 
+	Nonterminal    -
+	Action         R F -> ( E ) 
+State 22
+	Nonterminal    (
+	Action         S 13
+	Nonterminal    num
+	Action         S 14
+	Terminal       F
+	Goto           27
+State 23
+	Nonterminal    (
+	Action         S 13
+	Nonterminal    num
+	Action         S 14
+	Terminal       F
+	Goto           28
+State 24
+	Nonterminal    +
+	Action         S 19
+	Nonterminal    -
+	Action         S 20
+	Nonterminal    )
+	Action         S 29
+State 25
+	Nonterminal    )
+	Action         R E -> E + T 
+	Nonterminal    -
+	Action         R E -> E + T 
+	Nonterminal    *
+	Action         S 22
+	Nonterminal    +
+	Action         R E -> E + T 
+	Nonterminal    /
+	Action         S 23
+State 26
+	Nonterminal    )
+	Action         R E -> E - T 
+	Nonterminal    -
+	Action         R E -> E - T 
+	Nonterminal    *
+	Action         S 22
+	Nonterminal    +
+	Action         R E -> E - T 
+	Nonterminal    /
+	Action         S 23
+State 27
+	Nonterminal    *
+	Action         R T -> T * F 
+	Nonterminal    +
+	Action         R T -> T * F 
+	Nonterminal    /
+	Action         R T -> T * F 
+	Nonterminal    -
+	Action         R T -> T * F 
+	Nonterminal    )
+	Action         R T -> T * F 
+State 28
+	Nonterminal    *
+	Action         R T -> T / F 
+	Nonterminal    +
+	Action         R T -> T / F 
+	Nonterminal    /
+	Action         R T -> T / F 
+	Nonterminal    -
+	Action         R T -> T / F 
+	Nonterminal    )
+	Action         R T -> T / F 
+State 29
+	Nonterminal    -
+	Action         R F -> ( E ) 
+	Nonterminal    /
+	Action         R F -> ( E ) 
+	Nonterminal    +
+	Action         R F -> ( E ) 
+	Nonterminal    *
+	Action         R F -> ( E ) 
+	Nonterminal    )
+	Action         R F -> ( E ) 
+
+Stack
+0   
+$   
+Input          ( ( num + num ) / num $ 
+Output         Shift 4
+
+Stack
+0   4   
+$   (   
+Input          ( num + num ) / num $ 
+Output         Shift 13
+
+Stack
+0   4   13  
+$   (   (   
+Input          num + num ) / num $ 
+Output         Shift 14
+
+Stack
+0   4   13  14  
+$   (   (   num 
+Input          + num ) / num $ 
+Output         Reduce by F -> num 
+
+Stack
+0   4   13  12  
+$   (   (   F   
+Input          + num ) / num $ 
+Output         Reduce by T -> F 
+
+Stack
+0   4   13  11  
+$   (   (   T   
+Input          + num ) / num $ 
+Output         Reduce by E -> T 
+
+Stack
+0   4   13  24  
+$   (   (   E   
+Input          + num ) / num $ 
+Output         Shift 19
+
+Stack
+0   4   13  24  19  
+$   (   (   E   +   
+Input          num ) / num $ 
+Output         Shift 14
+
+Stack
+0   4   13  24  19  14  
+$   (   (   E   +   num 
+Input          ) / num $ 
+Output         Reduce by F -> num 
+
+Stack
+0   4   13  24  19  12  
+$   (   (   E   +   F   
+Input          ) / num $ 
+Output         Reduce by T -> F 
+
+Stack
+0   4   13  24  19  25  
+$   (   (   E   +   T   
+Input          ) / num $ 
+Output         Reduce by E -> E + T 
+
+Stack
+0   4   13  24  
+$   (   (   E   
+Input          ) / num $ 
+Output         Shift 29
+
+Stack
+0   4   13  24  29  
+$   (   (   E   )   
+Input          / num $ 
+Output         Reduce by F -> ( E ) 
+
+Stack
+0   4   12  
+$   (   F   
+Input          / num $ 
+Output         Reduce by T -> F 
+
+Stack
+0   4   11  
+$   (   T   
+Input          / num $ 
+Output         Shift 23
+
+Stack
+0   4   11  23  
+$   (   T   /   
+Input          num $ 
+Output         Shift 14
+
+Stack
+0   4   11  23  14  
+$   (   T   /   num 
+Input          $ 
+Output         Error!
+
+Parsing failed!

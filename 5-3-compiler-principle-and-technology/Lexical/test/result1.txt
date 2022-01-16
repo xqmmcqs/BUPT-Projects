@@ -1,0 +1,156 @@
+===========Tokens============
+[Location] test/test1.txt:1:1
+[Type] Preprocessing
+
+
+[Location] test/test1.txt:2:1
+[Type] Keyword
+[Value] int
+
+[Location] test/test1.txt:2:5
+[Type] Identifier
+[Value] main
+
+[Location] test/test1.txt:2:9
+[Type] Punctuator
+[Value] (
+
+[Location] test/test1.txt:2:10
+[Type] Punctuator
+[Value] )
+
+[Location] test/test1.txt:3:1
+[Type] Punctuator
+[Value] {
+
+[Location] test/test1.txt:4:5
+[Type] Keyword
+[Value] int
+
+[Location] test/test1.txt:4:9
+[Type] Identifier
+[Value] a
+
+[Location] test/test1.txt:4:10
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test1.txt:4:12
+[Type] Identifier
+[Value] b
+
+[Location] test/test1.txt:4:13
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test1.txt:5:5
+[Type] Identifier
+[Value] scanf
+
+[Location] test/test1.txt:5:10
+[Type] Punctuator
+[Value] (
+
+[Location] test/test1.txt:5:11
+[Type] String Literal
+[Value] %d%d
+
+[Location] test/test1.txt:5:17
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test1.txt:5:19
+[Type] Punctuator
+[Value] &
+
+[Location] test/test1.txt:5:20
+[Type] Identifier
+[Value] a
+
+[Location] test/test1.txt:5:21
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test1.txt:5:23
+[Type] Punctuator
+[Value] &
+
+[Location] test/test1.txt:5:24
+[Type] Identifier
+[Value] b
+
+[Location] test/test1.txt:5:25
+[Type] Punctuator
+[Value] )
+
+[Location] test/test1.txt:5:26
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test1.txt:6:5
+[Type] Identifier
+[Value] printf
+
+[Location] test/test1.txt:6:11
+[Type] Punctuator
+[Value] (
+
+[Location] test/test1.txt:6:12
+[Type] String Literal
+[Value] %d\n
+
+[Location] test/test1.txt:6:18
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test1.txt:6:20
+[Type] Identifier
+[Value] a
+
+[Location] test/test1.txt:6:22
+[Type] Punctuator
+[Value] +
+
+[Location] test/test1.txt:6:24
+[Type] Identifier
+[Value] b
+
+[Location] test/test1.txt:6:25
+[Type] Punctuator
+[Value] )
+
+[Location] test/test1.txt:6:26
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test1.txt:7:5
+[Type] Keyword
+[Value] return
+
+[Location] test/test1.txt:7:12
+[Type] Integer Constant
+[Value] 0
+
+[Location] test/test1.txt:7:13
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test1.txt:8:1
+[Type] Punctuator
+[Value] }
+
+===========Analysis==========
+[File Name] test/test1.txt
+[Rows] 8
+[Characters] 115
+[Unknown] 0
+[Keyword] 3
+[Identifier] 9
+[Integer Constant] 1
+[Float Constant] 0
+[Character Constant] 0
+[String Literal] 2
+[Punctuator] 19
+[Preprocessing] 1
+[End Of File] 1
+

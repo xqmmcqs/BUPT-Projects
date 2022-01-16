@@ -1,0 +1,11 @@
+$ Nonterminal symbols
+E A B L
+$ Terminal symbols
+num id ( ) ,
+$ Start symbol
+E
+$ Productions
+E -> A $ B
+A -> num $ id
+B -> ( L )
+L -> L , E $ E

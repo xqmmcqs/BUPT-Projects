@@ -1,0 +1,11 @@
+S C D E
+a b
+S D C E
+D C C
+D [empty]
+C E E
+C b
+E D D
+E a
+
+S

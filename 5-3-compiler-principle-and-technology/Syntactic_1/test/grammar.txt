@@ -1,0 +1,10 @@
+$ Nonterminal symbols
+E T F
+$ Terminal symbols
++ - * / ( ) num
+$ Start symbol
+E
+$ Productions
+E -> E + T $ E - T $ T
+T -> T * F $ T / F $ F
+F -> ( E ) $ num

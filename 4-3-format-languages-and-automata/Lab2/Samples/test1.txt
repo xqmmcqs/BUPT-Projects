@@ -1,0 +1,13 @@
+S A B C D
+a b c d
+S a
+S b A
+S B
+S c c D
+A a b B
+A [empty]
+B a A
+C d d C
+D d d d
+
+S

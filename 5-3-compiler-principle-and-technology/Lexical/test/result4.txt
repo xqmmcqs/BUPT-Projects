@@ -1,0 +1,184 @@
+===========Tokens============
+[Location] test/test4.txt:1:1
+[Type] Preprocessing
+
+
+[Location] test/test4.txt:2:1
+[Type] Keyword
+[Value] int
+
+[Location] test/test4.txt:2:5
+[Type] Identifier
+[Value] a
+
+[Location] test/test4.txt:2:6
+[Type] Punctuator
+[Value] [
+
+[Location] test/test4.txt:2:8
+[Type] Punctuator
+[Value] ]
+
+[Location] test/test4.txt:2:11
+[Type] Punctuator
+[Value] =
+
+[Location] test/test4.txt:2:13
+[Type] Punctuator
+[Value] {
+
+[Location] test/test4.txt:2:15
+[Type] Integer Constant
+[Value] 0
+
+[Location] test/test4.txt:2:16
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test4.txt:2:18
+[Type] Integer Constant
+[Value] 0
+
+[Location] test/test4.txt:2:19
+[Type] Punctuator
+[Value] }
+
+[Location] test/test4.txt:3:1
+[Type] Keyword
+[Value] const
+
+[Location] test/test4.txt:3:7
+[Type] Keyword
+[Value] char
+
+[Location] test/test4.txt:3:12
+[Type] Punctuator
+[Value] *
+
+[Location] test/test4.txt:3:14
+[Type] Identifier
+[Value] str
+
+[Location] test/test4.txt:3:18
+[Type] Punctuator
+[Value] =
+
+[Location] test/test4.txt:3:20
+[Type] String Literal
+[Value] 12   \   \      \n\t\v\f      sd\"\'
+
+[Location] test/test4.txt:4:8
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test4.txt:5:1
+[Type] Keyword
+[Value] int
+
+[Location] test/test4.txt:5:5
+[Type] Identifier
+[Value] main
+
+[Location] test/test4.txt:5:9
+[Type] Punctuator
+[Value] (
+
+[Location] test/test4.txt:5:10
+[Type] Punctuator
+[Value] )
+
+[Location] test/test4.txt:6:1
+[Type] Punctuator
+[Value] {
+
+[Location] test/test4.txt:7:5
+[Type] Identifier
+[Value] a
+
+[Location] test/test4.txt:7:6
+[Type] Punctuator
+[Value] [
+
+[Location] test/test4.txt:7:8
+[Type] Integer Constant
+[Value] 0
+
+[Location] test/test4.txt:7:9
+[Type] Punctuator
+[Value] ]
+
+[Location] test/test4.txt:7:12
+[Type] Punctuator
+[Value] =
+
+[Location] test/test4.txt:7:14
+[Type] Integer Constant
+[Value] 1
+
+[Location] test/test4.txt:7:15
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test4.txt:8:5
+[Type] Keyword
+[Value] return
+
+[Location] test/test4.txt:8:12
+[Type] Integer Constant
+[Value] 0
+
+[Location] test/test4.txt:8:13
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test4.txt:9:1
+[Type] Punctuator
+[Value] }
+
+[Location] test/test4.txt:9:3
+[Type] Unknown
+[Value] Unexpected Hash
+
+[Location] test/test4.txt:9:4
+[Type] Identifier
+[Value] include
+
+[Location] test/test4.txt:9:11
+[Type] Punctuator
+[Value] <
+
+[Location] test/test4.txt:9:12
+[Type] Identifier
+[Value] stdio
+
+[Location] test/test4.txt:9:17
+[Type] Punctuator
+[Value] .
+
+[Location] test/test4.txt:9:18
+[Type] Identifier
+[Value] h
+
+[Location] test/test4.txt:9:19
+[Type] Punctuator
+[Value] >
+
+[Location] test/test4.txt:10:1
+[Type] Unknown
+[Value] Unclosed Comment
+
+===========Analysis==========
+[File Name] test/test4.txt
+[Rows] 10
+[Characters] 186
+[Unknown] 2
+[Keyword] 5
+[Identifier] 7
+[Integer Constant] 5
+[Float Constant] 0
+[Character Constant] 0
+[String Literal] 1
+[Punctuator] 21
+[Preprocessing] 1
+[End Of File] 1
+

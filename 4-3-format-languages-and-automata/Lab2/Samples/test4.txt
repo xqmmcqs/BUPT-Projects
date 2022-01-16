@@ -1,0 +1,10 @@
+S A B
+( ) + * a
+S S + A
+S A
+A A * B
+A B
+B ( S )
+B a
+
+S

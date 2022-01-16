@@ -1,0 +1,205 @@
+[Nonterminal Symbols] B A S 
+[Terminal Symbols] b a 
+[Start Symbol] S
+[Productions]
+B -> a B 
+B -> b 
+A -> B A 
+A -> 
+S -> A 
+
+[Nonterminal Symbols] B A S' S 
+[Terminal Symbols] b a 
+[Start Symbol] S'
+[Productions]
+B -> a B 
+B -> b 
+A -> B A 
+A -> 
+S' -> S 
+S -> A 
+
+[DFA]
+I0:
+S -> · A     $ 
+A -> · B A     $ 
+B -> · a B     b a $ 
+B -> · b     b a $ 
+S' -> · S     $ 
+A -> ·     $ 
+--- S --> I5
+--- a --> I3
+--- B --> I2
+--- b --> I4
+--- A --> I1
+
+I1:
+S -> A ·     $ 
+
+I2:
+A -> · B A     $ 
+A -> B · A     $ 
+B -> · a B     b a $ 
+B -> · b     b a $ 
+A -> ·     $ 
+--- a --> I3
+--- b --> I4
+--- A --> I6
+--- B --> I2
+
+I3:
+B -> · a B     b a $ 
+B -> a · B     b a $ 
+B -> · b     b a $ 
+--- b --> I4
+--- B --> I7
+--- a --> I3
+
+I4:
+B -> b ·     $ a b 
+
+I5:
+S' -> S ·     $ 
+
+I6:
+A -> B A ·     $ 
+
+I7:
+B -> a B ·     $ a b 
+
+
+[Parsing Table]
+State 0
+	Nonterminal    $
+	Action         R A -> 
+	Nonterminal    b
+	Action         S 4
+	Nonterminal    a
+	Action         S 3
+	Terminal       A
+	Goto           1
+	Terminal       B
+	Goto           2
+	Terminal       S
+	Goto           5
+State 1
+	Nonterminal    $
+	Action         R S -> A 
+State 2
+	Nonterminal    $
+	Action         R A -> 
+	Nonterminal    b
+	Action         S 4
+	Nonterminal    a
+	Action         S 3
+	Terminal       B
+	Goto           2
+	Terminal       A
+	Goto           6
+State 3
+	Nonterminal    a
+	Action         S 3
+	Nonterminal    b
+	Action         S 4
+	Terminal       B
+	Goto           7
+State 4
+	Nonterminal    b
+	Action         R B -> b 
+	Nonterminal    a
+	Action         R B -> b 
+	Nonterminal    $
+	Action         R B -> b 
+State 5
+	Nonterminal    $
+	Action         ACC
+State 6
+	Nonterminal    $
+	Action         R A -> B A 
+State 7
+	Nonterminal    b
+	Action         R B -> a B 
+	Nonterminal    a
+	Action         R B -> a B 
+	Nonterminal    $
+	Action         R B -> a B 
+
+Stack
+0   
+$   
+Input          a b a b $ 
+Output         Shift 3
+
+Stack
+0   3   
+$   a   
+Input          b a b $ 
+Output         Shift 4
+
+Stack
+0   3   4   
+$   a   b   
+Input          a b $ 
+Output         Reduce by B -> b 
+
+Stack
+0   3   7   
+$   a   B   
+Input          a b $ 
+Output         Reduce by B -> a B 
+
+Stack
+0   2   
+$   B   
+Input          a b $ 
+Output         Shift 3
+
+Stack
+0   2   3   
+$   B   a   
+Input          b $ 
+Output         Shift 4
+
+Stack
+0   2   3   4   
+$   B   a   b   
+Input          $ 
+Output         Reduce by B -> b 
+
+Stack
+0   2   3   7   
+$   B   a   B   
+Input          $ 
+Output         Reduce by B -> a B 
+
+Stack
+0   2   2   
+$   B   B   
+Input          $ 
+Output         Reduce by A -> 
+
+Stack
+0   2   2   6   
+$   B   B   A   
+Input          $ 
+Output         Reduce by A -> B A 
+
+Stack
+0   2   6   
+$   B   A   
+Input          $ 
+Output         Reduce by A -> B A 
+
+Stack
+0   1   
+$   A   
+Input          $ 
+Output         Reduce by S -> A 
+
+Stack
+0   5   
+$   S   
+Input          $ 
+Output         Accepted!
+
+Parsing successful!

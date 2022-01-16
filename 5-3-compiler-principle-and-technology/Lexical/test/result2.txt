@@ -1,0 +1,1616 @@
+===========Tokens============
+[Location] test/test2.txt:1:1
+[Type] Preprocessing
+
+
+[Location] test/test2.txt:2:1
+[Type] Preprocessing
+
+
+[Location] test/test2.txt:3:1
+[Type] Preprocessing
+
+
+[Location] test/test2.txt:9:1
+[Type] Keyword
+[Value] typedef
+
+[Location] test/test2.txt:9:9
+[Type] Keyword
+[Value] struct
+
+[Location] test/test2.txt:9:16
+[Type] Identifier
+[Value] Node
+
+[Location] test/test2.txt:10:1
+[Type] Punctuator
+[Value] {
+
+[Location] test/test2.txt:11:5
+[Type] Keyword
+[Value] int
+
+[Location] test/test2.txt:11:9
+[Type] Identifier
+[Value] a
+
+[Location] test/test2.txt:11:10
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test2.txt:11:12
+[Type] Identifier
+[Value] b
+
+[Location] test/test2.txt:11:13
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:12:5
+[Type] Keyword
+[Value] long
+
+[Location] test/test2.txt:12:10
+[Type] Keyword
+[Value] long
+
+[Location] test/test2.txt:12:15
+[Type] Identifier
+[Value] c
+
+[Location] test/test2.txt:12:16
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:13:5
+[Type] Keyword
+[Value] union
+
+[Location] test/test2.txt:14:5
+[Type] Punctuator
+[Value] {
+
+[Location] test/test2.txt:15:9
+[Type] Keyword
+[Value] float
+
+[Location] test/test2.txt:15:15
+[Type] Identifier
+[Value] d
+
+[Location] test/test2.txt:15:16
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:16:9
+[Type] Keyword
+[Value] double
+
+[Location] test/test2.txt:16:16
+[Type] Identifier
+[Value] e
+
+[Location] test/test2.txt:16:17
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:17:5
+[Type] Punctuator
+[Value] }
+
+[Location] test/test2.txt:17:6
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:18:5
+[Type] Identifier
+[Value] LL
+
+[Location] test/test2.txt:18:8
+[Type] Identifier
+[Value] f
+
+[Location] test/test2.txt:18:9
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:19:1
+[Type] Punctuator
+[Value] }
+
+[Location] test/test2.txt:19:3
+[Type] Identifier
+[Value] Node
+
+[Location] test/test2.txt:19:7
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:21:1
+[Type] Keyword
+[Value] char
+
+[Location] test/test2.txt:21:6
+[Type] Identifier
+[Value] ch
+
+[Location] test/test2.txt:21:8
+[Type] Punctuator
+[Value] [
+
+[Location] test/test2.txt:21:9
+[Type] Integer Constant
+[Value] 10
+
+[Location] test/test2.txt:21:11
+[Type] Punctuator
+[Value] ]
+
+[Location] test/test2.txt:21:12
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:22:1
+[Type] Keyword
+[Value] enum
+
+[Location] test/test2.txt:22:6
+[Type] Identifier
+[Value] TT
+
+[Location] test/test2.txt:23:1
+[Type] Punctuator
+[Value] {
+
+[Location] test/test2.txt:24:5
+[Type] Identifier
+[Value] namea
+
+[Location] test/test2.txt:24:10
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test2.txt:25:5
+[Type] Identifier
+[Value] nameb
+
+[Location] test/test2.txt:25:10
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test2.txt:26:1
+[Type] Punctuator
+[Value] }
+
+[Location] test/test2.txt:26:2
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:27:1
+[Type] Keyword
+[Value] extern
+
+[Location] test/test2.txt:27:8
+[Type] Identifier
+[Value] eee
+
+[Location] test/test2.txt:27:11
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:29:1
+[Type] Keyword
+[Value] static
+
+[Location] test/test2.txt:29:8
+[Type] Keyword
+[Value] int
+
+[Location] test/test2.txt:29:12
+[Type] Identifier
+[Value] func
+
+[Location] test/test2.txt:29:16
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:29:17
+[Type] Keyword
+[Value] unsigned
+
+[Location] test/test2.txt:29:26
+[Type] Keyword
+[Value] long
+
+[Location] test/test2.txt:29:31
+[Type] Keyword
+[Value] long
+
+[Location] test/test2.txt:29:36
+[Type] Identifier
+[Value] var
+
+[Location] test/test2.txt:29:39
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:30:1
+[Type] Punctuator
+[Value] {
+
+[Location] test/test2.txt:31:5
+[Type] Identifier
+[Value] var
+
+[Location] test/test2.txt:31:9
+[Type] Punctuator
+[Value] +=
+
+[Location] test/test2.txt:31:12
+[Type] Identifier
+[Value] var
+
+[Location] test/test2.txt:31:16
+[Type] Punctuator
+[Value] *
+
+[Location] test/test2.txt:31:18
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:31:19
+[Type] Identifier
+[Value] var
+
+[Location] test/test2.txt:31:23
+[Type] Punctuator
+[Value] -
+
+[Location] test/test2.txt:31:25
+[Type] Identifier
+[Value] var
+
+[Location] test/test2.txt:31:28
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:31:30
+[Type] Punctuator
+[Value] +
+
+[Location] test/test2.txt:31:32
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:31:33
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:31:34
+[Type] Identifier
+[Value] var
+
+[Location] test/test2.txt:31:38
+[Type] Punctuator
+[Value] /
+
+[Location] test/test2.txt:31:40
+[Type] Identifier
+[Value] var
+
+[Location] test/test2.txt:31:43
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:31:45
+[Type] Punctuator
+[Value] %
+
+[Location] test/test2.txt:31:47
+[Type] Identifier
+[Value] var
+
+[Location] test/test2.txt:31:50
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:31:51
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:32:5
+[Type] Keyword
+[Value] unsigned
+
+[Location] test/test2.txt:32:14
+[Type] Identifier
+[Value] LL
+
+[Location] test/test2.txt:32:17
+[Type] Punctuator
+[Value] *
+
+[Location] test/test2.txt:32:18
+[Type] Keyword
+[Value] restrict
+
+[Location] test/test2.txt:32:27
+[Type] Identifier
+[Value] p
+
+[Location] test/test2.txt:32:29
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:32:31
+[Type] Punctuator
+[Value] &
+
+[Location] test/test2.txt:32:32
+[Type] Identifier
+[Value] var
+
+[Location] test/test2.txt:32:35
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:33:5
+[Type] Keyword
+[Value] return
+
+[Location] test/test2.txt:33:12
+[Type] Identifier
+[Value] var
+
+[Location] test/test2.txt:33:15
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:34:1
+[Type] Punctuator
+[Value] }
+
+[Location] test/test2.txt:36:1
+[Type] Keyword
+[Value] inline
+
+[Location] test/test2.txt:36:8
+[Type] Keyword
+[Value] int
+
+[Location] test/test2.txt:36:12
+[Type] Identifier
+[Value] f
+
+[Location] test/test2.txt:36:13
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:36:14
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:37:1
+[Type] Punctuator
+[Value] {
+
+[Location] test/test2.txt:38:5
+[Type] Keyword
+[Value] return
+
+[Location] test/test2.txt:38:12
+[Type] Keyword
+[Value] sizeof
+
+[Location] test/test2.txt:38:18
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:38:19
+[Type] Identifier
+[Value] LL
+
+[Location] test/test2.txt:38:21
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:38:22
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:39:1
+[Type] Punctuator
+[Value] }
+
+[Location] test/test2.txt:41:1
+[Type] Keyword
+[Value] int
+
+[Location] test/test2.txt:41:5
+[Type] Identifier
+[Value] main
+
+[Location] test/test2.txt:41:9
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:41:10
+[Type] Keyword
+[Value] int
+
+[Location] test/test2.txt:41:14
+[Type] Identifier
+[Value] argc
+
+[Location] test/test2.txt:41:18
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test2.txt:41:20
+[Type] Keyword
+[Value] char
+
+[Location] test/test2.txt:41:25
+[Type] Punctuator
+[Value] *
+
+[Location] test/test2.txt:41:26
+[Type] Identifier
+[Value] argv
+
+[Location] test/test2.txt:41:30
+[Type] Punctuator
+[Value] [
+
+[Location] test/test2.txt:41:31
+[Type] Punctuator
+[Value] ]
+
+[Location] test/test2.txt:41:32
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:42:1
+[Type] Punctuator
+[Value] {
+
+[Location] test/test2.txt:43:5
+[Type] Identifier
+[Value] Node
+
+[Location] test/test2.txt:43:10
+[Type] Identifier
+[Value] node
+
+[Location] test/test2.txt:43:14
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:44:5
+[Type] Identifier
+[Value] Node
+
+[Location] test/test2.txt:44:10
+[Type] Punctuator
+[Value] *
+
+[Location] test/test2.txt:44:11
+[Type] Identifier
+[Value] pnode
+
+[Location] test/test2.txt:44:17
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:44:19
+[Type] Punctuator
+[Value] &
+
+[Location] test/test2.txt:44:20
+[Type] Identifier
+[Value] node
+
+[Location] test/test2.txt:44:24
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:45:5
+[Type] Identifier
+[Value] node
+
+[Location] test/test2.txt:45:9
+[Type] Punctuator
+[Value] .
+
+[Location] test/test2.txt:45:10
+[Type] Identifier
+[Value] a
+
+[Location] test/test2.txt:45:12
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:45:14
+[Type] Identifier
+[Value] pnode
+
+[Location] test/test2.txt:45:19
+[Type] Punctuator
+[Value] ->
+
+[Location] test/test2.txt:45:21
+[Type] Identifier
+[Value] a
+
+[Location] test/test2.txt:45:22
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:46:5
+[Type] Identifier
+[Value] node
+
+[Location] test/test2.txt:46:9
+[Type] Punctuator
+[Value] .
+
+[Location] test/test2.txt:46:10
+[Type] Identifier
+[Value] b
+
+[Location] test/test2.txt:46:11
+[Type] Punctuator
+[Value] ++
+
+[Location] test/test2.txt:46:13
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:47:5
+[Type] Keyword
+[Value] auto
+
+[Location] test/test2.txt:47:10
+[Type] Keyword
+[Value] unsigned
+
+[Location] test/test2.txt:47:19
+[Type] Keyword
+[Value] int
+
+[Location] test/test2.txt:47:23
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:47:25
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:47:27
+[Type] Identifier
+[Value] node
+
+[Location] test/test2.txt:47:31
+[Type] Punctuator
+[Value] .
+
+[Location] test/test2.txt:47:32
+[Type] Identifier
+[Value] b
+
+[Location] test/test2.txt:47:34
+[Type] Punctuator
+[Value] &
+
+[Location] test/test2.txt:47:36
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:47:37
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:47:38
+[Type] Identifier
+[Value] pnode
+
+[Location] test/test2.txt:47:43
+[Type] Punctuator
+[Value] ->
+
+[Location] test/test2.txt:47:45
+[Type] Identifier
+[Value] c
+
+[Location] test/test2.txt:47:47
+[Type] Punctuator
+[Value] |
+
+[Location] test/test2.txt:47:49
+[Type] Identifier
+[Value] ch
+
+[Location] test/test2.txt:47:51
+[Type] Punctuator
+[Value] [
+
+[Location] test/test2.txt:47:52
+[Type] Integer Constant
+[Value] 0
+
+[Location] test/test2.txt:47:53
+[Type] Punctuator
+[Value] ]
+
+[Location] test/test2.txt:47:54
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:47:56
+[Type] Punctuator
+[Value] ^
+
+[Location] test/test2.txt:47:58
+[Type] Identifier
+[Value] node
+
+[Location] test/test2.txt:47:62
+[Type] Punctuator
+[Value] .
+
+[Location] test/test2.txt:47:63
+[Type] Identifier
+[Value] a
+
+[Location] test/test2.txt:47:64
+[Type] Punctuator
+[Value] --
+
+[Location] test/test2.txt:47:66
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:47:67
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:48:5
+[Type] Keyword
+[Value] volatile
+
+[Location] test/test2.txt:48:14
+[Type] Keyword
+[Value] unsigned
+
+[Location] test/test2.txt:48:23
+[Type] Keyword
+[Value] char
+
+[Location] test/test2.txt:48:28
+[Type] Identifier
+[Value] m
+
+[Location] test/test2.txt:48:30
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:48:32
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:48:34
+[Type] Punctuator
+[Value] <<
+
+[Location] test/test2.txt:48:37
+[Type] Integer Constant
+[Value] 5
+
+[Location] test/test2.txt:48:39
+[Type] Punctuator
+[Value] +
+
+[Location] test/test2.txt:48:41
+[Type] Character Constant
+[Value] c
+
+[Location] test/test2.txt:48:44
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:49:5
+[Type] Keyword
+[Value] const
+
+[Location] test/test2.txt:49:11
+[Type] Keyword
+[Value] float
+
+[Location] test/test2.txt:49:17
+[Type] Identifier
+[Value] y
+
+[Location] test/test2.txt:49:19
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:49:21
+[Type] Float Constant
+[Value] 3.14
+
+[Location] test/test2.txt:49:25
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test2.txt:49:27
+[Type] Identifier
+[Value] z
+
+[Location] test/test2.txt:49:29
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:49:31
+[Type] Float Constant
+[Value] 3e5
+
+[Location] test/test2.txt:49:34
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:50:5
+[Type] Keyword
+[Value] _Bool
+
+[Location] test/test2.txt:50:11
+[Type] Identifier
+[Value] t
+
+[Location] test/test2.txt:50:13
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:50:15
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:50:17
+[Type] Punctuator
+[Value] <
+
+[Location] test/test2.txt:50:19
+[Type] Identifier
+[Value] z
+
+[Location] test/test2.txt:50:21
+[Type] Punctuator
+[Value] &&
+
+[Location] test/test2.txt:50:24
+[Type] Identifier
+[Value] y
+
+[Location] test/test2.txt:50:26
+[Type] Punctuator
+[Value] >
+
+[Location] test/test2.txt:50:28
+[Type] Identifier
+[Value] z
+
+[Location] test/test2.txt:50:30
+[Type] Punctuator
+[Value] ||
+
+[Location] test/test2.txt:50:33
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:50:35
+[Type] Punctuator
+[Value] <=
+
+[Location] test/test2.txt:50:38
+[Type] Identifier
+[Value] y
+
+[Location] test/test2.txt:50:40
+[Type] Punctuator
+[Value] &&
+
+[Location] test/test2.txt:50:43
+[Type] Identifier
+[Value] y
+
+[Location] test/test2.txt:50:45
+[Type] Punctuator
+[Value] >=
+
+[Location] test/test2.txt:50:48
+[Type] Identifier
+[Value] z
+
+[Location] test/test2.txt:50:49
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:51:5
+[Type] Identifier
+[Value] node
+
+[Location] test/test2.txt:51:9
+[Type] Punctuator
+[Value] .
+
+[Location] test/test2.txt:51:10
+[Type] Identifier
+[Value] a
+
+[Location] test/test2.txt:51:12
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:51:14
+[Type] Identifier
+[Value] m
+
+[Location] test/test2.txt:51:15
+[Type] Punctuator
+[Value] ++
+
+[Location] test/test2.txt:51:18
+[Type] Punctuator
+[Value] +
+
+[Location] test/test2.txt:51:20
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:51:21
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:52:5
+[Type] Keyword
+[Value] _Complex
+
+[Location] test/test2.txt:52:14
+[Type] Identifier
+[Value] n
+
+[Location] test/test2.txt:52:15
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:53:5
+[Type] Keyword
+[Value] goto
+
+[Location] test/test2.txt:53:10
+[Type] Identifier
+[Value] label
+
+[Location] test/test2.txt:53:15
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:54:1
+[Type] Preprocessing
+
+
+[Location] test/test2.txt:55:1
+[Type] Preprocessing
+
+
+[Location] test/test2.txt:56:1
+[Type] Preprocessing
+
+
+[Location] test/test2.txt:57:5
+[Type] Keyword
+[Value] char
+
+[Location] test/test2.txt:57:10
+[Type] Punctuator
+[Value] *
+
+[Location] test/test2.txt:57:11
+[Type] Identifier
+[Value] str
+
+[Location] test/test2.txt:57:15
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:57:17
+[Type] String Literal
+[Value] str/*comment*/
+
+[Location] test/test2.txt:57:33
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:58:1
+[Type] Identifier
+[Value] label
+
+[Location] test/test2.txt:58:6
+[Type] Punctuator
+[Value] :
+
+[Location] test/test2.txt:59:5
+[Type] Keyword
+[Value] if
+
+[Location] test/test2.txt:59:8
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:59:9
+[Type] Identifier
+[Value] y
+
+[Location] test/test2.txt:59:11
+[Type] Punctuator
+[Value] !=
+
+[Location] test/test2.txt:59:14
+[Type] Identifier
+[Value] z
+
+[Location] test/test2.txt:59:15
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:60:9
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:60:11
+[Type] Punctuator
+[Value] <<=
+
+[Location] test/test2.txt:60:15
+[Type] Integer Constant
+[Value] 2
+
+[Location] test/test2.txt:60:17
+[Type] Punctuator
+[Value] ^
+
+[Location] test/test2.txt:60:19
+[Type] Integer Constant
+[Value] 3
+
+[Location] test/test2.txt:60:20
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:61:5
+[Type] Keyword
+[Value] else
+
+[Location] test/test2.txt:61:10
+[Type] Keyword
+[Value] if
+
+[Location] test/test2.txt:61:13
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:61:14
+[Type] Punctuator
+[Value] !
+
+[Location] test/test2.txt:61:15
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:61:16
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:61:18
+[Type] Punctuator
+[Value] >>
+
+[Location] test/test2.txt:61:21
+[Type] Integer Constant
+[Value] 2
+
+[Location] test/test2.txt:61:22
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:61:23
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:62:9
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:62:11
+[Type] Punctuator
+[Value] >>=
+
+[Location] test/test2.txt:62:15
+[Type] Integer Constant
+[Value] 2
+
+[Location] test/test2.txt:62:16
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:63:5
+[Type] Keyword
+[Value] else
+
+[Location] test/test2.txt:64:9
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:64:11
+[Type] Punctuator
+[Value] &=
+
+[Location] test/test2.txt:64:14
+[Type] Integer Constant
+[Value] 5
+
+[Location] test/test2.txt:64:15
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:65:5
+[Type] Identifier
+[Value] m
+
+[Location] test/test2.txt:65:7
+[Type] Punctuator
+[Value] ^=
+
+[Location] test/test2.txt:65:10
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:65:11
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:65:13
+[Type] Punctuator
+[Value] |=
+
+[Location] test/test2.txt:65:16
+[Type] Punctuator
+[Value] ~
+
+[Location] test/test2.txt:65:17
+[Type] Identifier
+[Value] node
+
+[Location] test/test2.txt:65:21
+[Type] Punctuator
+[Value] .
+
+[Location] test/test2.txt:65:22
+[Type] Identifier
+[Value] b
+
+[Location] test/test2.txt:65:23
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:65:24
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:66:5
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:66:7
+[Type] Punctuator
+[Value] -=
+
+[Location] test/test2.txt:66:10
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:66:11
+[Type] Identifier
+[Value] node
+
+[Location] test/test2.txt:66:15
+[Type] Punctuator
+[Value] .
+
+[Location] test/test2.txt:66:16
+[Type] Identifier
+[Value] a
+
+[Location] test/test2.txt:66:18
+[Type] Punctuator
+[Value] *=
+
+[Location] test/test2.txt:66:21
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:66:22
+[Type] Identifier
+[Value] m
+
+[Location] test/test2.txt:66:24
+[Type] Punctuator
+[Value] /=
+
+[Location] test/test2.txt:66:27
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:66:28
+[Type] Identifier
+[Value] node
+
+[Location] test/test2.txt:66:32
+[Type] Punctuator
+[Value] .
+
+[Location] test/test2.txt:66:33
+[Type] Identifier
+[Value] b
+
+[Location] test/test2.txt:66:35
+[Type] Punctuator
+[Value] %=
+
+[Location] test/test2.txt:66:38
+[Type] Integer Constant
+[Value] 2u
+
+[Location] test/test2.txt:66:40
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:66:41
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:66:42
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:66:43
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:67:5
+[Type] Keyword
+[Value] while
+
+[Location] test/test2.txt:67:11
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:67:12
+[Type] Integer Constant
+[Value] 1
+
+[Location] test/test2.txt:67:13
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:68:5
+[Type] Punctuator
+[Value] {
+
+[Location] test/test2.txt:70:9
+[Type] Keyword
+[Value] if
+
+[Location] test/test2.txt:70:12
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:70:13
+[Type] Integer Constant
+[Value] 5u
+
+[Location] test/test2.txt:70:15
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:71:13
+[Type] Keyword
+[Value] break
+
+[Location] test/test2.txt:71:18
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:72:9
+[Type] Keyword
+[Value] if
+
+[Location] test/test2.txt:72:12
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:72:13
+[Type] Identifier
+[Value] y
+
+[Location] test/test2.txt:72:15
+[Type] Punctuator
+[Value] <=
+
+[Location] test/test2.txt:72:18
+[Type] Identifier
+[Value] z
+
+[Location] test/test2.txt:72:19
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:73:13
+[Type] Keyword
+[Value] continue
+
+[Location] test/test2.txt:73:21
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:74:5
+[Type] Punctuator
+[Value] }
+
+[Location] test/test2.txt:75:5
+[Type] Keyword
+[Value] do
+
+[Location] test/test2.txt:76:5
+[Type] Punctuator
+[Value] {
+
+[Location] test/test2.txt:77:9
+[Type] Keyword
+[Value] signed
+
+[Location] test/test2.txt:77:16
+[Type] Identifier
+[Value] _temp
+
+[Location] test/test2.txt:77:22
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:77:24
+[Type] Integer Constant
+[Value] 0x0123456789abcdefUL
+
+[Location] test/test2.txt:77:44
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test2.txt:77:46
+[Type] Identifier
+[Value] temp_temp
+
+[Location] test/test2.txt:77:56
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:77:58
+[Type] Integer Constant
+[Value] 00123251
+
+[Location] test/test2.txt:77:66
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:78:9
+[Type] Keyword
+[Value] float
+
+[Location] test/test2.txt:78:15
+[Type] Identifier
+[Value] __
+
+[Location] test/test2.txt:78:18
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:78:20
+[Type] Float Constant
+[Value] 0x12f.2p+4
+
+[Location] test/test2.txt:78:30
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:79:9
+[Type] Keyword
+[Value] switch
+
+[Location] test/test2.txt:79:16
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:79:17
+[Type] Identifier
+[Value] _temp
+
+[Location] test/test2.txt:79:22
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:80:9
+[Type] Punctuator
+[Value] {
+
+[Location] test/test2.txt:81:9
+[Type] Keyword
+[Value] case
+
+[Location] test/test2.txt:81:14
+[Type] Character Constant
+[Value] d
+
+[Location] test/test2.txt:81:17
+[Type] Punctuator
+[Value] :
+
+[Location] test/test2.txt:88:13
+[Type] Keyword
+[Value] break
+
+[Location] test/test2.txt:88:18
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:90:9
+[Type] Keyword
+[Value] default
+
+[Location] test/test2.txt:90:16
+[Type] Punctuator
+[Value] :
+
+[Location] test/test2.txt:91:13
+[Type] Keyword
+[Value] break
+
+[Location] test/test2.txt:91:18
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:92:9
+[Type] Punctuator
+[Value] }
+
+[Location] test/test2.txt:93:5
+[Type] Punctuator
+[Value] }
+
+[Location] test/test2.txt:93:7
+[Type] Keyword
+[Value] while
+
+[Location] test/test2.txt:93:13
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:93:14
+[Type] Integer Constant
+[Value] 0
+
+[Location] test/test2.txt:93:15
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:93:16
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:95:5
+[Type] Keyword
+[Value] for
+
+[Location] test/test2.txt:95:9
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:95:10
+[Type] Keyword
+[Value] register
+
+[Location] test/test2.txt:95:19
+[Type] Keyword
+[Value] int
+
+[Location] test/test2.txt:95:23
+[Type] Identifier
+[Value] i
+
+[Location] test/test2.txt:95:25
+[Type] Punctuator
+[Value] =
+
+[Location] test/test2.txt:95:27
+[Type] Integer Constant
+[Value] 1
+
+[Location] test/test2.txt:95:28
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:95:30
+[Type] Identifier
+[Value] i
+
+[Location] test/test2.txt:95:32
+[Type] Punctuator
+[Value] <=
+
+[Location] test/test2.txt:95:35
+[Type] Punctuator
+[Value] -
+
+[Location] test/test2.txt:95:36
+[Type] Integer Constant
+[Value] 1
+
+[Location] test/test2.txt:95:37
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:95:39
+[Type] Punctuator
+[Value] ++
+
+[Location] test/test2.txt:95:41
+[Type] Identifier
+[Value] i
+
+[Location] test/test2.txt:95:42
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:96:9
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:98:5
+[Type] Identifier
+[Value] printf
+
+[Location] test/test2.txt:98:11
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:98:12
+[Type] String Literal
+[Value] %llu\n
+
+[Location] test/test2.txt:98:20
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test2.txt:98:22
+[Type] Integer Constant
+[Value] 3ul
+
+[Location] test/test2.txt:98:26
+[Type] Punctuator
+[Value] ?
+
+[Location] test/test2.txt:98:28
+[Type] Integer Constant
+[Value] 2llu
+
+[Location] test/test2.txt:98:33
+[Type] Punctuator
+[Value] :
+
+[Location] test/test2.txt:98:35
+[Type] Integer Constant
+[Value] 45ull
+
+[Location] test/test2.txt:98:40
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:98:41
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:99:5
+[Type] Identifier
+[Value] printf
+
+[Location] test/test2.txt:99:11
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:99:12
+[Type] String Literal
+[Value] floats %f %lf\n
+
+[Location] test/test2.txt:100:10
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test2.txt:101:12
+[Type] Float Constant
+[Value] 1.e-2f
+
+[Location] test/test2.txt:101:18
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test2.txt:101:20
+[Type] Punctuator
+[Value] (
+
+[Location] test/test2.txt:101:21
+[Type] Keyword
+[Value] double
+
+[Location] test/test2.txt:101:27
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:101:28
+[Type] Float Constant
+[Value] .356e+3l
+
+[Location] test/test2.txt:101:36
+[Type] Punctuator
+[Value] )
+
+[Location] test/test2.txt:101:37
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:102:5
+[Type] Keyword
+[Value] return
+
+[Location] test/test2.txt:102:12
+[Type] Identifier
+[Value] x
+
+[Location] test/test2.txt:102:13
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test2.txt:102:15
+[Type] Integer Constant
+[Value] 0
+
+[Location] test/test2.txt:102:16
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test2.txt:103:1
+[Type] Punctuator
+[Value] }
+
+===========Analysis==========
+[File Name] test/test2.txt
+[Rows] 103
+[Characters] 1847
+[Unknown] 0
+[Keyword] 61
+[Identifier] 100
+[Integer Constant] 20
+[Float Constant] 5
+[Character Constant] 2
+[String Literal] 3
+[Punctuator] 203
+[Preprocessing] 6
+[End Of File] 1
+

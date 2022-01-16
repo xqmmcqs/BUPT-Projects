@@ -1,0 +1,360 @@
+===========Tokens============
+[Location] test/test3.txt:1:1
+[Type] Keyword
+[Value] int
+
+[Location] test/test3.txt:1:5
+[Type] Identifier
+[Value] a
+
+[Location] test/test3.txt:1:6
+[Type] Punctuator
+[Value] [
+
+[Location] test/test3.txt:1:7
+[Type] Punctuator
+[Value] ]
+
+[Location] test/test3.txt:1:9
+[Type] Punctuator
+[Value] =
+
+[Location] test/test3.txt:1:11
+[Type] Punctuator
+[Value] {
+
+[Location] test/test3.txt:1:12
+[Type] Unknown
+[Value] Illegal Number 0xe+2
+
+[Location] test/test3.txt:1:17
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:1:19
+[Type] Unknown
+[Value] Illegal Number 012823
+
+[Location] test/test3.txt:1:25
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:1:27
+[Type] Unknown
+[Value] Illegal Number 123F
+
+[Location] test/test3.txt:1:31
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:1:33
+[Type] Unknown
+[Value] Illegal Number 23LU23
+
+[Location] test/test3.txt:1:39
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:1:41
+[Type] Unknown
+[Value] Illegal Number 0XFFEUU
+
+[Location] test/test3.txt:1:48
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:1:50
+[Type] Unknown
+[Value] Illegal Number 0xU
+
+[Location] test/test3.txt:1:53
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:1:55
+[Type] Unknown
+[Value] Illegal Number 0EU
+
+[Location] test/test3.txt:1:58
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:1:60
+[Type] Unknown
+[Value] Illegal Number 0x12bufb
+
+[Location] test/test3.txt:1:68
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:1:70
+[Type] Integer Constant
+[Value] 12
+
+[Location] test/test3.txt:1:72
+[Type] Identifier
+[Value] _
+
+[Location] test/test3.txt:1:73
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:1:75
+[Type] Unknown
+[Value] Illegal Number 12g
+
+[Location] test/test3.txt:1:78
+[Type] Punctuator
+[Value] +
+
+[Location] test/test3.txt:1:79
+[Type] Integer Constant
+[Value] 2
+
+[Location] test/test3.txt:1:80
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:1:82
+[Type] Unknown
+[Value] Illegal Number 12p+2
+
+[Location] test/test3.txt:1:87
+[Type] Punctuator
+[Value] }
+
+[Location] test/test3.txt:1:88
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test3.txt:2:1
+[Type] Keyword
+[Value] double
+
+[Location] test/test3.txt:2:8
+[Type] Identifier
+[Value] b
+
+[Location] test/test3.txt:2:9
+[Type] Punctuator
+[Value] [
+
+[Location] test/test3.txt:2:10
+[Type] Punctuator
+[Value] ]
+
+[Location] test/test3.txt:2:12
+[Type] Punctuator
+[Value] =
+
+[Location] test/test3.txt:2:14
+[Type] Punctuator
+[Value] {
+
+[Location] test/test3.txt:2:15
+[Type] Float Constant
+[Value] 02582e2
+
+[Location] test/test3.txt:2:22
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:24
+[Type] Float Constant
+[Value] 00.3e-4l
+
+[Location] test/test3.txt:2:32
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:34
+[Type] Float Constant
+[Value] 0X5e5ep2
+
+[Location] test/test3.txt:2:42
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:44
+[Type] Unknown
+[Value] Illegal Number 0xp0
+
+[Location] test/test3.txt:2:48
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:50
+[Type] Unknown
+[Value] Illegal Number 3e+l
+
+[Location] test/test3.txt:2:54
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:56
+[Type] Unknown
+[Value] Illegal Number 0xfpl
+
+[Location] test/test3.txt:2:61
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:63
+[Type] Unknown
+[Value] Illegal Number 0x5e.2
+
+[Location] test/test3.txt:2:69
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:71
+[Type] Unknown
+[Value] Illegal Number 2.2.2
+
+[Location] test/test3.txt:2:76
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:78
+[Type] Unknown
+[Value] Illegal Number 3e5.4
+
+[Location] test/test3.txt:2:83
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:85
+[Type] Unknown
+[Value] Illegal Number 0e+9U
+
+[Location] test/test3.txt:2:90
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:92
+[Type] Unknown
+[Value] Illegal Number 0x4h3e-l
+
+[Location] test/test3.txt:2:100
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:102
+[Type] Punctuator
+[Value] .
+
+[Location] test/test3.txt:2:103
+[Type] Identifier
+[Value] e4
+
+[Location] test/test3.txt:2:105
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:107
+[Type] Unknown
+[Value] Illegal Number 0xp+2F
+
+[Location] test/test3.txt:2:113
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:115
+[Type] Unknown
+[Value] Illegal Number 0x.p5L
+
+[Location] test/test3.txt:2:121
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:123
+[Type] Unknown
+[Value] Illegal Number 5.e+2e-4
+
+[Location] test/test3.txt:2:131
+[Type] Punctuator
+[Value] ,
+
+[Location] test/test3.txt:2:133
+[Type] Unknown
+[Value] Illegal Number 0x.2p+2al
+
+[Location] test/test3.txt:2:142
+[Type] Punctuator
+[Value] }
+
+[Location] test/test3.txt:2:143
+[Type] Punctuator
+[Value] ;
+
+[Location] test/test3.txt:3:1
+[Type] Keyword
+[Value] char
+
+[Location] test/test3.txt:3:6
+[Type] Identifier
+[Value] c
+
+[Location] test/test3.txt:3:8
+[Type] Punctuator
+[Value] =
+
+[Location] test/test3.txt:3:10
+[Type] Unknown
+[Value] Unclosed Character Constant ccc
+
+[Location] test/test3.txt:4:1
+[Type] Keyword
+[Value] const
+
+[Location] test/test3.txt:4:7
+[Type] Keyword
+[Value] char
+
+[Location] test/test3.txt:4:12
+[Type] Punctuator
+[Value] *
+
+[Location] test/test3.txt:4:14
+[Type] Identifier
+[Value] d
+
+[Location] test/test3.txt:4:16
+[Type] Punctuator
+[Value] =
+
+[Location] test/test3.txt:4:18
+[Type] Unknown
+[Value] Unclosed String Literal fff
+
+[Location] test/test3.txt:5:1
+[Type] Keyword
+[Value] char
+
+[Location] test/test3.txt:5:6
+[Type] Identifier
+[Value] a
+
+[Location] test/test3.txt:5:8
+[Type] Punctuator
+[Value] =
+
+[Location] test/test3.txt:5:10
+[Type] Unknown
+[Value] Slash Newline at EOF
+
+===========Analysis==========
+[File Name] test/test3.txt
+[Rows] 5
+[Characters] 280
+[Unknown] 25
+[Keyword] 6
+[Identifier] 7
+[Integer Constant] 2
+[Float Constant] 3
+[Character Constant] 0
+[String Literal] 0
+[Punctuator] 43
+[Preprocessing] 0
+[End Of File] 1
+

@@ -1,0 +1,10 @@
+$ Nonterminal symbols
+S A B
+$ Terminal symbols
+a b
+$ Start symbol
+S
+$ Productions
+S -> A
+A -> B A $ [empty]
+B -> a B $ b

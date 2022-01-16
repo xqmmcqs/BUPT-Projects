@@ -1,0 +1,328 @@
+[Nonterminal Symbols] L E 
+[Terminal Symbols] ( ) , a 
+[Start Symbol] E
+[Productions]
+L -> L , E 
+L -> E 
+E -> ( L ) 
+E -> a 
+
+[Nonterminal Symbols] L E' E 
+[Terminal Symbols] ( ) , a 
+[Start Symbol] E'
+[Productions]
+L -> L , E 
+L -> E 
+E' -> E 
+E -> ( L ) 
+E -> a 
+
+[DFA]
+I0:
+E' -> · E     $ 
+E -> · ( L )     $ 
+E -> · a     $ 
+--- a --> I3
+--- ( --> I2
+--- E --> I1
+
+I1:
+E' -> E ·     $ 
+
+I2:
+E -> · ( L )     , ) 
+E -> ( · L )     $ 
+E -> · a     , ) 
+L -> · L , E     ) , 
+L -> · E     ) , 
+--- a --> I6
+--- L --> I5
+--- E --> I7
+--- ( --> I4
+
+I3:
+E -> a ·     $ 
+
+I4:
+E -> · ( L )     , ) 
+E -> ( · L )     , ) 
+E -> · a     , ) 
+L -> · L , E     ) , 
+L -> · E     ) , 
+--- a --> I6
+--- L --> I8
+--- E --> I7
+--- ( --> I4
+
+I5:
+E -> ( L · )     $ 
+L -> L · , E     , ) 
+--- , --> I10
+--- ) --> I9
+
+I6:
+E -> a ·     ) , 
+
+I7:
+L -> E ·     , ) 
+
+I8:
+E -> ( L · )     ) , 
+L -> L · , E     , ) 
+--- , --> I10
+--- ) --> I11
+
+I9:
+E -> ( L ) ·     $ 
+
+I10:
+E -> · ( L )     , ) 
+E -> · a     , ) 
+L -> L , · E     , ) 
+--- a --> I6
+--- E --> I12
+--- ( --> I4
+
+I11:
+E -> ( L ) ·     , ) 
+
+I12:
+L -> L , E ·     ) , 
+
+
+[Parsing Table]
+State 0
+	Nonterminal    (
+	Action         S 2
+	Nonterminal    a
+	Action         S 3
+	Terminal       E
+	Goto           1
+State 1
+	Nonterminal    $
+	Action         ACC
+State 2
+	Nonterminal    (
+	Action         S 4
+	Nonterminal    a
+	Action         S 6
+	Terminal       E
+	Goto           7
+	Terminal       L
+	Goto           5
+State 3
+	Nonterminal    $
+	Action         R E -> a 
+State 4
+	Nonterminal    (
+	Action         S 4
+	Nonterminal    a
+	Action         S 6
+	Terminal       E
+	Goto           7
+	Terminal       L
+	Goto           8
+State 5
+	Nonterminal    )
+	Action         S 9
+	Nonterminal    ,
+	Action         S 10
+State 6
+	Nonterminal    ,
+	Action         R E -> a 
+	Nonterminal    )
+	Action         R E -> a 
+State 7
+	Nonterminal    )
+	Action         R L -> E 
+	Nonterminal    ,
+	Action         R L -> E 
+State 8
+	Nonterminal    )
+	Action         S 11
+	Nonterminal    ,
+	Action         S 10
+State 9
+	Nonterminal    $
+	Action         R E -> ( L ) 
+State 10
+	Nonterminal    (
+	Action         S 4
+	Nonterminal    a
+	Action         S 6
+	Terminal       E
+	Goto           12
+State 11
+	Nonterminal    )
+	Action         R E -> ( L ) 
+	Nonterminal    ,
+	Action         R E -> ( L ) 
+State 12
+	Nonterminal    ,
+	Action         R L -> L , E 
+	Nonterminal    )
+	Action         R L -> L , E 
+
+Stack
+0   
+$   
+Input          ( ( a ) , a , ( a , a ) ) $ 
+Output         Shift 2
+
+Stack
+0   2   
+$   (   
+Input          ( a ) , a , ( a , a ) ) $ 
+Output         Shift 4
+
+Stack
+0   2   4   
+$   (   (   
+Input          a ) , a , ( a , a ) ) $ 
+Output         Shift 6
+
+Stack
+0   2   4   6   
+$   (   (   a   
+Input          ) , a , ( a , a ) ) $ 
+Output         Reduce by E -> a 
+
+Stack
+0   2   4   7   
+$   (   (   E   
+Input          ) , a , ( a , a ) ) $ 
+Output         Reduce by L -> E 
+
+Stack
+0   2   4   8   
+$   (   (   L   
+Input          ) , a , ( a , a ) ) $ 
+Output         Shift 11
+
+Stack
+0   2   4   8   11  
+$   (   (   L   )   
+Input          , a , ( a , a ) ) $ 
+Output         Reduce by E -> ( L ) 
+
+Stack
+0   2   7   
+$   (   E   
+Input          , a , ( a , a ) ) $ 
+Output         Reduce by L -> E 
+
+Stack
+0   2   5   
+$   (   L   
+Input          , a , ( a , a ) ) $ 
+Output         Shift 10
+
+Stack
+0   2   5   10  
+$   (   L   ,   
+Input          a , ( a , a ) ) $ 
+Output         Shift 6
+
+Stack
+0   2   5   10  6   
+$   (   L   ,   a   
+Input          , ( a , a ) ) $ 
+Output         Reduce by E -> a 
+
+Stack
+0   2   5   10  12  
+$   (   L   ,   E   
+Input          , ( a , a ) ) $ 
+Output         Reduce by L -> L , E 
+
+Stack
+0   2   5   
+$   (   L   
+Input          , ( a , a ) ) $ 
+Output         Shift 10
+
+Stack
+0   2   5   10  
+$   (   L   ,   
+Input          ( a , a ) ) $ 
+Output         Shift 4
+
+Stack
+0   2   5   10  4   
+$   (   L   ,   (   
+Input          a , a ) ) $ 
+Output         Shift 6
+
+Stack
+0   2   5   10  4   6   
+$   (   L   ,   (   a   
+Input          , a ) ) $ 
+Output         Reduce by E -> a 
+
+Stack
+0   2   5   10  4   7   
+$   (   L   ,   (   E   
+Input          , a ) ) $ 
+Output         Reduce by L -> E 
+
+Stack
+0   2   5   10  4   8   
+$   (   L   ,   (   L   
+Input          , a ) ) $ 
+Output         Shift 10
+
+Stack
+0   2   5   10  4   8   10  
+$   (   L   ,   (   L   ,   
+Input          a ) ) $ 
+Output         Shift 6
+
+Stack
+0   2   5   10  4   8   10  6   
+$   (   L   ,   (   L   ,   a   
+Input          ) ) $ 
+Output         Reduce by E -> a 
+
+Stack
+0   2   5   10  4   8   10  12  
+$   (   L   ,   (   L   ,   E   
+Input          ) ) $ 
+Output         Reduce by L -> L , E 
+
+Stack
+0   2   5   10  4   8   
+$   (   L   ,   (   L   
+Input          ) ) $ 
+Output         Shift 11
+
+Stack
+0   2   5   10  4   8   11  
+$   (   L   ,   (   L   )   
+Input          ) $ 
+Output         Reduce by E -> ( L ) 
+
+Stack
+0   2   5   10  12  
+$   (   L   ,   E   
+Input          ) $ 
+Output         Reduce by L -> L , E 
+
+Stack
+0   2   5   
+$   (   L   
+Input          ) $ 
+Output         Shift 9
+
+Stack
+0   2   5   9   
+$   (   L   )   
+Input          $ 
+Output         Reduce by E -> ( L ) 
+
+Stack
+0   1   
+$   E   
+Input          $ 
+Output         Accepted!
+
+Parsing successful!

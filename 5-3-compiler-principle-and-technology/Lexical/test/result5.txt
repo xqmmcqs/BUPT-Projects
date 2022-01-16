@@ -1,0 +1,40 @@
+===========Tokens============
+[Location] test/test5.txt:1:1
+[Type] Unknown
+[Value] Unknown Character `
+
+[Location] test/test5.txt:2:1
+[Type] Unknown
+[Value] Unknown Character @
+
+[Location] test/test5.txt:3:1
+[Type] Unknown
+[Value] Unknown Character $
+
+[Location] test/test5.txt:4:1
+[Type] Unknown
+[Value] Unexpected Hash
+
+[Location] test/test5.txt:5:1
+[Type] Unknown
+[Value] Unexpected Hash
+
+[Location] test/test5.txt:7:1
+[Type] Unknown
+[Value] Slash Newline at EOF
+
+===========Analysis==========
+[File Name] test/test5.txt
+[Rows] 7
+[Characters] 37
+[Unknown] 6
+[Keyword] 0
+[Identifier] 0
+[Integer Constant] 0
+[Float Constant] 0
+[Character Constant] 0
+[String Literal] 0
+[Punctuator] 0
+[Preprocessing] 0
+[End Of File] 1
+

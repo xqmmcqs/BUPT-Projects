@@ -1,0 +1,182 @@
+[Nonterminal Symbols] F T E 
+[Terminal Symbols] * - ( num / ) + 
+[Start Symbol] E
+[Productions]
+F -> ( E ) | num | 
+T -> T * F | T / F | F | 
+E -> E + T | E - T | T | 
+
+[Nonterminal symbols] F T E' T' E 
+[Terminal symbols] * - ( num / ) + 
+[Start symbol] E
+[Productions]
+F -> ( E ) | num | 
+T' -> [empty] | * F T' | / F T' | 
+E' -> [empty] | + T E' | - T E' | 
+E -> T E' | 
+T -> F T' | 
+
+[FIRST set of candidates]
+Candidate      ( E ) 
+FIRST          ( 
+Candidate      num 
+FIRST          num 
+Candidate      F T' 
+FIRST          ( num 
+Candidate      [empty] 
+FIRST          [empty] 
+Candidate      + T E' 
+FIRST          + 
+Candidate      - T E' 
+FIRST          - 
+Candidate      [empty] 
+FIRST          [empty] 
+Candidate      * F T' 
+FIRST          * 
+Candidate      / F T' 
+FIRST          / 
+Candidate      T E' 
+FIRST          ( num 
+
+[FIRST and FOLLOW set of nonterminals]
+Nonterminals   F
+FIRST          num ( 
+FOLLOW         - / $ + ) * 
+Nonterminals   T
+FIRST          num ( 
+FOLLOW         ) + $ - 
+Nonterminals   E'
+FIRST          - + [empty] 
+FOLLOW         $ ) 
+Nonterminals   T'
+FIRST          / * [empty] 
+FOLLOW         - $ + ) 
+Nonterminals   E
+FIRST          num ( 
+FOLLOW         ) $ 
+
+[Parsing Table]
+Nonterminal    E
+	Terminal       (
+	Production     E -> T E' 
+	Terminal       num
+	Production     E -> T E' 
+
+Nonterminal    T'
+	Terminal       *
+	Production     T' -> * F T' 
+	Terminal       -
+	Production     T' -> [empty] 
+	Terminal       $
+	Production     T' -> [empty] 
+	Terminal       /
+	Production     T' -> / F T' 
+	Terminal       )
+	Production     T' -> [empty] 
+	Terminal       +
+	Production     T' -> [empty] 
+
+Nonterminal    E'
+	Terminal       -
+	Production     E' -> - T E' 
+	Terminal       $
+	Production     E' -> [empty] 
+	Terminal       )
+	Production     E' -> [empty] 
+	Terminal       +
+	Production     E' -> + T E' 
+
+Nonterminal    T
+	Terminal       (
+	Production     T -> F T' 
+	Terminal       num
+	Production     T -> F T' 
+
+Nonterminal    F
+	Terminal       (
+	Production     F -> ( E ) 
+	Terminal       num
+	Production     F -> num 
+
+
+Stack          $ E 
+Input          ( num + num ) * / num $ 
+Output          
+
+Stack          $ E' T 
+Input          ( num + num ) * / num $ 
+Output         E -> T E' 
+
+Stack          $ E' T' F 
+Input          ( num + num ) * / num $ 
+Output         T -> F T' 
+
+Stack          $ E' T' ) E ( 
+Input          ( num + num ) * / num $ 
+Output         F -> ( E ) 
+
+Stack          $ E' T' ) E 
+Input          num + num ) * / num $ 
+Output         
+
+Stack          $ E' T' ) E' T 
+Input          num + num ) * / num $ 
+Output         E -> T E' 
+
+Stack          $ E' T' ) E' T' F 
+Input          num + num ) * / num $ 
+Output         T -> F T' 
+
+Stack          $ E' T' ) E' T' num 
+Input          num + num ) * / num $ 
+Output         F -> num 
+
+Stack          $ E' T' ) E' T' 
+Input          + num ) * / num $ 
+Output         
+
+Stack          $ E' T' ) E' 
+Input          + num ) * / num $ 
+Output         T' -> [empty] 
+
+Stack          $ E' T' ) E' T + 
+Input          + num ) * / num $ 
+Output         E' -> + T E' 
+
+Stack          $ E' T' ) E' T 
+Input          num ) * / num $ 
+Output         
+
+Stack          $ E' T' ) E' T' F 
+Input          num ) * / num $ 
+Output         T -> F T' 
+
+Stack          $ E' T' ) E' T' num 
+Input          num ) * / num $ 
+Output         F -> num 
+
+Stack          $ E' T' ) E' T' 
+Input          ) * / num $ 
+Output         
+
+Stack          $ E' T' ) E' 
+Input          ) * / num $ 
+Output         T' -> [empty] 
+
+Stack          $ E' T' ) 
+Input          ) * / num $ 
+Output         E' -> [empty] 
+
+Stack          $ E' T' 
+Input          * / num $ 
+Output         
+
+Stack          $ E' T' F * 
+Input          * / num $ 
+Output         T' -> * F T' 
+
+Stack          $ E' T' F 
+Input          / num $ 
+Output         
+
+Parsing failed!

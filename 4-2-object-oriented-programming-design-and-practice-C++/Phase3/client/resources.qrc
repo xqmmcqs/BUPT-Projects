@@ -1,0 +1,59 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/LoginView.qml</file>
+        <file>qml/MainView.qml</file>
+        <file>qml/UserView.qml</file>
+        <file>qml/AddComView.qml</file>
+        <file>qml/BackButton.qml</file>
+        <file>qml/ComView.qml</file>
+        <file>qml/TextDialog.qml</file>
+        <file>qml/EditComView.qml</file>
+        <file>qml/SearchView.qml</file>
+        <file>qml/SearchResultView.qml</file>
+        <file>qml/CartView.qml</file>
+        <file>qml/RegularText.qml</file>
+        <file>qml/ComIcon.qml</file>
+        <file>qml/ComNameText.qml</file>
+        <file>qml/OrderView.qml</file>
+        <file>qml/OrderListView.qml</file>
+        <file>qml/SmallButton.qml</file>
+        <file>qml/BigButton.qml</file>
+        <file>qml/CusTextField.qml</file>
+        <file>qml/BannerText.qml</file>
+        <file>qml/DiscountView.qml</file>
+    </qresource>
+    <qresource prefix="/Images">
+        <file alias="merchant">static/cashier.svg</file>
+        <file alias="customer">static/customer.svg</file>
+        <file alias="book">static/book-pile.svg</file>
+        <file alias="clothes">static/clothes.svg</file>
+        <file alias="elec">static/responsive.svg</file>
+        <file alias="addcart">static/add-shopping-cart.svg</file>
+        <file alias="order">static/buy.svg</file>
+        <file alias="delete">static/delete.svg</file>
+        <file alias="edit">static/edit.svg</file>
+        <file alias="minus">static/minus.svg</file>
+        <file alias="pay">static/payment-method.svg</file>
+        <file alias="plus">static/plus.svg</file>
+        <file alias="refund">static/refund.svg</file>
+        <file alias="orderlist">static/clipboard.svg</file>
+        <file alias="search">static/loupe.svg</file>
+        <file alias="back">static/previous.svg</file>
+        <file alias="cart">static/shopping-cart.svg</file>
+        <file alias="profile">static/user.svg</file>
+        <file alias="check">static/check.svg</file>
+        <file alias="removecart">static/remove-shopping-cart.svg</file>
+        <file alias="register">static/add.svg</file>
+        <file alias="login">static/enter.svg</file>
+        <file alias="logout">static/logout.svg</file>
+        <file alias="passwd">static/secure.svg</file>
+        <file alias="box">static/box.svg</file>
+        <file alias="trash">static/trash.svg</file>
+        <file alias="coupon">static/coupon.svg</file>
+        <file alias="offer">static/offer.svg</file>
+    </qresource>
+    <qresource prefix="/Fonts">
+        <file alias="SourceHanSerif">static/SourceHanSerifCN-Regular.otf</file>
+    </qresource>
+</RCC>
