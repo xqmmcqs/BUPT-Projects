@@ -24,3 +24,13 @@ A collection of coursework and labs during my undergraduate studies at BUPT.
 - [Compiler Principle and Technology | 编译原理与技术](./5-3-compiler-principle-and-technology/)
 - [The Practice of Programming | 程序设计实践](./5-4-the-practice-of-programming/)
 - [Python Programming | Python 程序设计](./5-5-python-programming/)
+
+## Semester 6
+
+- [Computer Architecture | 计算机系统结构](./6-1-computer-architecture/)
+- [Software Engineering | 软件工程](./6-2-software-engineering/)
+- [Basics of Big Data Technology | 大数据技术基础](./6-3-basics-of-big-data-technology/)
+- [Modern Switching Principles | 现代交换原理](./6-4-modern-switching-principles/)
+- [Technologies and Protocols of NGI | 下一代 Internet 技术与协议](./6-5-technologies-and-protocols-of-ngi/)
+- [Linux Development Environment and Application | Linux 开发环境与应用](./6-6-linux-development-environment-and-application/)
+- [The Course Design of Compiler Principle and Technology | 编译原理与技术课程设计](https://github.com/xqmmcqs/s1mple-compiler)
